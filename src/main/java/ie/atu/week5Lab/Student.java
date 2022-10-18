@@ -7,8 +7,9 @@ public class Student {
         System.out.println("Please enter Student Name");
         Scanner input = new Scanner(System.in);         //create scanner
         String name = input.nextLine();                 //read user input
-
-        System.out.println("You entered : " + name);
+        StudentClass studentDetails = new StudentClass();
+        studentDetails.setName(name);
+        System.out.println("Name entered : " + studentDetails.getName());
     }
 
 }
